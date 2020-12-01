@@ -649,7 +649,13 @@ h4 {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 999;
-  margin-top: -80px;
+  margin-top: -230px;
+}
+
+@media only screen and (max-width: 600px) {
+  #presentingWrap::before {
+    margin-top: -80px;
+  }
 }
 
 #presentingWrap .topTitle h1 {

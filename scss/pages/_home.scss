@@ -161,7 +161,10 @@ padding-bottom: 20vh;
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 999;
-        margin-top: -80px;
+        margin-top: -230px;
+        @include responsive(phone){
+            margin-top: -80px;
+        }
      }
      .topTitle{
          h1{
