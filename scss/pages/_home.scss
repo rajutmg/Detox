@@ -1,0 +1,694 @@
+#dearFrn{
+    @include responsive(phone){
+        margin-top: -20vh;
+    }
+    .questionBox{
+        h3{
+            color: $primary-box-color;
+            font-size: 1em;
+            font-weight: 700;
+        }
+                .imgBox{
+                    padding: 15px;
+                    @include responsive(phone){
+                        width: 220px;
+                        height: 220px;
+                    }
+                    img{
+                        @include responsive(phone){
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+    }
+    .btmQuestion{
+        p{
+            font-size: 1em;
+        }
+    }
+}
+
+#truthFact{
+    height: 98vh;
+        position: relative;
+        @include responsive(phone){
+            height: auto; 
+            padding-bottom: 200px;
+        }
+        .amoeba{
+            position: absolute;
+            height: 63vh;
+            top: 30vh;
+            left: -7vw;
+            @include responsive(phone){
+                height: 200px;  
+                top: auto;
+                bottom: 0;
+                left: -18vw;
+            }
+        }
+        .amoebaTop{
+            position: absolute;
+            height: 67vh;
+            left: 8vw;
+            top: 27vh;
+            @include responsive(phone){
+                height: 220px;  
+                top: auto;
+                bottom: 0;
+                left: 5vw; 
+            }
+        }
+        h3{
+            font-size: 1.06em;
+            font-weight: 600;
+        }
+        ul{padding: 0;
+            li{
+                list-style: none;
+                line-height: 1.7;
+                font-size: 0.9em;
+            }
+        }
+        p{
+            font-size: 0.9em;
+        }
+}
+#industryWrap{
+    background: #f2f2f2;
+    position: relative;
+    margin-top: 30px;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 100vw;
+        width: 100%;
+        background-image: url(../img/DetoxIcon/addCon1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 999;
+        margin-top: -230px;
+        @include responsive(phone){
+            margin-top: -80px;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        height: 100vw;
+        width: 100%;
+        background-image: url(../img/DetoxIcon/addCon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 999;
+        margin-top: 38px;
+    }
+    ul{padding: 0;
+        li{
+            list-style: none;
+            line-height: 1.7;
+            font-size: 0.9em;
+        }
+    }
+    .addiRow{
+        .row{
+            margin: 0 -15px;
+        }
+    }
+    .industryModal{
+        width: 62%;
+        position: relative;
+        @include responsive(phone){
+            margin: 15px;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+            z-index: 2;
+            position: relative;
+        }
+        .overImage{
+            position: absolute;
+            left: 0;
+            transform: rotate(-8deg);
+            opacity: 0.7;
+            z-index: 1;
+        }
+    }
+    .exhaustedImage{
+        width: 90%;
+        @include responsive(phone){
+            width: 60%; 
+        }
+    }
+}
+#journeyWrap{
+padding: 55vh 0;
+padding-bottom: 20vh;
+@include responsive(phone){
+    padding: 50vh 0;
+    padding-bottom: 15vh;
+}
+}
+#presentingWrap{
+     &::before{
+        content: "";
+        position: absolute;
+        height: 100vw;
+        width: 100%;
+        background-image: url(../img/DetoxIcon/conWhite.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 999;
+        margin-top: -80px;
+     }
+     .topTitle{
+         h1{
+            text-align: center;
+            color: red;
+            font-weight: 800;
+            font-size: 2.7em;
+            @include responsive(phone){
+                font-size: 2em;
+            }
+         }
+     }
+     .sideBook{
+         width: 60%;
+     }
+    .presentLower{
+        position: relative;
+        overflow: hidden;
+        .amoeba2{
+            position: absolute;
+            top: 0;
+            right: -15vh;
+            height: 66vh;
+            @include responsive(phone){
+                height: 25vh;
+                z-index: -1;
+            }
+        }
+        .fruitLady{
+            position: absolute;
+            top: -2%;
+            right: 10%;
+            width: 33vw;
+            @include responsive(phone){
+                width: 45vw; 
+                right: 0%;
+                top: 0%;
+                z-index: -1;
+                // display: none;
+            }
+        }
+    }
+}
+#bannerSecDiv{
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    // font-size: 90%;
+    @include responsive(phone){
+        overflow: hidden;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: $heading-font;
+    }
+
+        .bookDivider{
+            position: absolute;
+            top: -74px;
+            right: 5%;
+            height: 145%;
+            @include responsive(phone){
+                top: 0;
+                right: -11%;
+                height: 101%;
+            }
+        }
+    .detoxDiet{
+        margin: 17px 0;
+        margin-top: 35px;
+        @include responsive(phone){
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+        h1{
+            color: #fff;
+            font-size: 3.8em;
+            font-family: "franklingothiclt";
+            text-transform: uppercase;
+            background-image: linear-gradient(#fb892f, #ff4000);
+            display: initial;
+            padding: 12px 25px;
+            position: relative;
+            clip-path: polygon(95% 0, 100% 50%, 95% 99%, 0% 100%, 0 52%, 0% 0%);
+            @include responsive(phone){
+                font-size: 2em;
+                position: absolute;
+                width: 115%;
+                left: 15px;
+                bottom: 0;
+                padding: 10px 15px;
+            }
+            span{
+                padding-right: 40px;
+            }
+        }
+    }
+    .detoxMain{
+        font-size: 4em;
+        background: -webkit-linear-gradient(#edffb6, #e7fea1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px !important;
+        @include responsive(phone){
+            font-size: 2em;
+        }
+    }
+    h1{
+        font-size: 3.8em;
+        color: #012f07;
+        margin: 0;
+        line-height: 1;
+        @include responsive(phone){
+            font-size: 2em; 
+        }
+    }
+    h2{
+        color: #012f07;
+        margin-bottom: 20px;
+        font-size: 2.2em;
+        @include responsive(phone){
+            font-size: 1.9em;
+        }
+    }
+    h3{
+        color: #000;
+        font-family: $font-stack;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        @include responsive(phone){
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+    .bookPrice{
+        position: absolute;
+        right: 27%;
+        height: 100%;
+        top: 6%;
+        @include responsive(phone){
+            display: flex;
+            justify-content: end;
+            flex-direction: column-reverse;
+            bottom: 10%;
+            top: 0%;
+            right: -4%;
+        }
+        .priceHolder{
+            height: 50%;
+            position: relative;
+            @include responsive(phone){
+                height: 50%;
+            }
+            .price{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                line-height: 1;
+                color: #fff;
+                font-weight: 700;
+                font-size: 1.5em;
+                padding: 20px;
+                @include responsive(phone){
+                    font-size: 1.1em;
+                }
+                h3{
+                    margin: 0;
+                    font-size: 0.9em;
+                    color: #fff;
+                    font-family: "Poppins", sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    text-shadow: 0px 0px 1px #000;
+                    margin: 5px 0;
+                }
+                p{
+                    margin-bottom: 0;
+                    color: #ffe402;
+                }
+            }
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+#dietWrap{
+    background: #f2f2f2;
+    .dietBox{
+        padding: 0 30px;
+        margin-bottom: 30px;
+        @include responsive(phone){
+            padding: 0 15px;
+            margin-bottom: 15px;
+        }
+        .innerImage{
+            text-align: center;
+            @include responsive(phone){
+                text-align: left;
+            }
+        }
+        img{
+            margin: 0 auto;
+            height: 150px;
+            @include responsive(phone){
+                height: 80px; 
+            }
+        }
+        h3{
+            font-size: 1.05em;
+            color: $primary-box-color;
+            font-weight: 700;
+        }
+    }
+    .italicWrap{
+        color: $primary-box-color;
+    font-style: italic;
+    }
+}
+
+.miniDiv{
+    padding: 20px 0;
+    position: relative;
+    border-radius: 10px;
+    margin: 80px 0;
+    @include responsive(phone){
+        margin: 40px 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: $heading-font;
+    }
+
+        .bookDivider{
+            position: absolute;
+            top: -86px;
+            right: 2%;
+            height: 162%;
+            @include responsive(phone){
+                top: 0;
+                right: 0%;
+                height: 70%;
+            }
+        }
+    .detoxDiet{
+        margin: 17px 0;
+        margin-top: 35px;
+        margin-left: -15px;
+        @include responsive(phone){
+    margin-top: 55px;
+        }
+        h1{
+            color: #fff;
+            font-size: 3.8em;
+            font-family: "franklingothiclt";
+            text-transform: uppercase;
+            background-image: linear-gradient(#fb892f, #ff4000);
+            display: initial;
+            padding: 12px 25px;
+            position: relative;
+            clip-path: polygon(95% 0, 100% 50%, 95% 99%, 0% 100%, 0 52%, 0% 0%);
+            @include responsive(phone){
+                font-size: 2em;
+                position: absolute;
+                width: 128%;
+                bottom: 0;
+                padding: 10px 20px;
+            }
+            span{
+                padding-right: 40px;
+            }
+        }
+    }
+    .detoxMain{
+        font-size: 4em;
+        background: -webkit-linear-gradient(#edffb6, #e7fea1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px !important;
+        @include responsive(phone){
+            font-size: 2em; 
+        }
+    }
+    h1{
+        font-size: 3.8em;
+        color: #012f07;
+        margin: 0;
+        line-height: 1;
+        @include responsive(phone){
+            font-size: 2em; 
+        }
+    }
+    h2{
+        color: #012f07;
+        margin-bottom: 20px;
+        font-size: 2.2em;
+        @include responsive(phone){
+            font-size: 1.9em;
+        }
+    }
+    h3{
+        color: #000;
+        font-family: $font-stack;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        @include responsive(phone){
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+    .bookPrice{
+        position: absolute;
+        right: 32%;
+        height: 100%;
+        top: 6%;
+        @include responsive(phone){
+            display: flex;
+            justify-content: end;
+            flex-direction: column-reverse;
+            bottom: 10%;
+    right: 0;
+    height: 100%;
+    top: -20%;
+        }
+        .priceHolder{
+            height: 50%;
+            position: relative;
+            @include responsive(phone){
+                height: 45%;
+            }
+            .price{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                line-height: 1;
+                color: #fff;
+                font-weight: 700;
+                font-size: 1.5em;
+                padding: 20px;
+                text-align: center;
+                @include responsive(phone){
+                    font-size: 1em;
+                }
+                h3{
+                    margin: 0;
+                    font-size: 0.9em;
+                    color: #fff;
+                    font-family: "Poppins", sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    text-shadow: 0px 0px 1px #000;
+                    margin: 5px 0;
+                }
+                p{
+                    margin-bottom: 0;
+                    color: #ffe402;
+                }
+            }
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+#notWrap{
+    .consider{
+        h1{
+            color: red;
+            span{
+                font-weight: 600;
+                color: $primary-color;
+            }
+        }
+    }
+    .notForYou{
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+    ul{
+        padding-left: 20%;
+        @include responsive(phone){
+            padding-left: 10%;
+        }
+        li{
+            list-style: none;
+            line-height: 2.7;
+            font-size: 0.9em;
+            position: relative;
+            &::before{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                height: 30px;
+                width: 30px;
+                background-image: url(../img/DetoxIcon/check.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                left: -39px;
+                top: 9px;
+                @include responsive(phone){
+                    height: 20px;
+                    width: 20px;
+                    left: -25px;
+                }
+            }
+        }
+    }
+}
+#downArrow{
+    padding-bottom: 20px;
+}
+#discoverWrap{
+    padding: 15vh 0;
+    padding-top: 30vh;
+    position: relative;
+    @include responsive(phone){
+        padding: 7vh 0;
+        padding-top: 18vh;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        left: 41%;
+        bottom: 100%;
+        border-color: transparent transparent #ffffff transparent;
+        border-style: solid;
+        border-width: 94px;
+        top: 30px;
+        transform: rotate(180deg);
+        @include responsive(phone){
+    left: 35%;
+    border-width: 48px;
+        }
+    }
+    .secTitle{
+        h1{
+            color: #000;
+            font-weight: 800;
+        }
+        margin-bottom: 40px;
+    }
+}
+#dreamBody{
+    position: relative;
+    overflow: hidden;
+        img{
+            position: absolute;
+            right: -12%;
+            width: 50%;
+            bottom: 0;  
+            z-index: -1;   
+        }
+}
+#testimonialWrap{
+    background: #f2f2f2;
+    .row.testiCover {
+        margin-top: 150px;
+        position: relative;
+        @include responsive(phone){
+            margin-top: 80px;
+        }
+        &::before{
+            content: '';
+            background-image: linear-gradient(#94b274, #749357);
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            border-radius: 10px;
+            top: -120px;
+            @include responsive(phone){
+                top: -80px;   
+            }
+        }
+        .boxCov{
+            &:not(:last-child){
+                @include responsive(phone){
+                    margin-bottom: 70px;
+                }
+            }
+        }
+        .testimonialBox{
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 8px #00000042;
+            height: 100%;
+            position: relative;
+            padding-bottom: 50px;
+            .testiImage{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-top: -85px;
+                border: 3px solid #fff;
+                box-shadow: 0px 0px 4px #00000063;
+                margin-bottom: 10px;
+                @include responsive(phone){
+                    width: 90px;
+                    height: 90px;
+                    margin-top: -65px;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .name{
+                position: absolute;
+                bottom: 5px;
+                font-weight: 600;
+            }
+        }
+    }
+}

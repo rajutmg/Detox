@@ -1,0 +1,359 @@
+/* footer */
+#footerWrap {
+    background: #fbfbfb;
+    color: #fff;
+
+    h3 {
+        position: relative;
+        font-size: 1.3rem;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 25px 0;
+    }
+}
+
+/* associated-section */
+
+#associated-wrap {
+    @include responsive(phone) {
+        padding: 30px 0;
+    }
+    .row {
+        align-items: center;
+    }
+    h1 {
+        letter-spacing: 4px;
+        line-height: 1.4;
+        color: #111111;
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        position: relative;
+        font-family: $associated;
+        small {
+            font-size: 24px;
+            letter-spacing: 2px;
+
+            @include responsive(phone) {
+                font-size: 17px;
+            }
+        }
+
+        @include responsive(phone) {
+            // font-size: 1.7rem;
+            // margin-left: 30px;
+            font-size: 1.1rem;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    .out {
+        position: absolute;
+        bottom: -3px;
+        left: -37px;
+        font-style: italic;
+    }
+
+    span {
+        text-transform: lowercase;
+        color: $primary-color;
+        position: relative;
+        letter-spacing: 1px;
+
+        &::after {
+            border-bottom: 2px solid $primary-color;
+            bottom: 4px;
+            content: "";
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    .associated {
+        ul {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+
+            li {
+                list-style: none;
+                float: left;
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                img {
+                    height: 90px;
+                    @include responsive(tab-port) {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#scrollTop {
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+
+#foot_btm {
+    background: #444;
+    padding: 25px 0;
+    padding-bottom: 20px;
+    position: relative;
+
+    @include responsive(phone) {
+        padding: 25px 0;
+    }
+
+    .float-right {
+        @include responsive(phone) {
+            float: none !important;
+            text-align: center;
+        }
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 0.9rem;
+
+        @include responsive(phone) {
+            float: none !important;
+            text-align: center;
+        }
+    }
+
+    span {
+        color: #d2d2d2;
+    }
+
+    .foot-policy {
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+
+        @include responsive(phone) {
+            text-align: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        a {
+            padding: 0 5px;
+            font-size: 0.9rem;
+            color: #fff;
+
+            &:hover {
+                color: #d2d2d2;
+            }
+        }
+    }
+    .leftLinks {
+        margin-top: 10px;
+        @include responsive(phone) {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        a {
+            float: left;
+            position: relative;
+            font-size: 0.955rem;
+            &:hover {
+                color: #d2d2d2;
+            }
+            &:not(:last-child) {
+                padding-right: 10px;
+                margin-right: 10px;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: -1px;
+                    top: 4px;
+                    height: 15px;
+                    width: 1px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+    .footLow {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #7d7d7d;
+        text-align: center;
+        @include responsive(phone) {
+            margin-top: 30px;
+            padding-top: 15px;
+        }
+        p {
+            font-size: 0.85rem;
+            color: #d2d2d2;
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        span.footSpan {
+            position: relative;
+            padding: 0 10px;
+            span {
+                position: absolute;
+                font-size: 24px;
+                top: -12px;
+                left: 5px;
+            }
+        }
+    }
+}
+
+.topScrollBtm {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    @include responsive(phone) {
+        display: none;
+    }
+
+    #scrollTop {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 0;
+        font-size: 45px;
+        position: absolute;
+        bottom: -19px;
+
+        &:hover {
+            bottom: -15px;
+            color: #82cec3;
+            transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+        }
+
+        @include responsive(phone) {
+            bottom: -95px;
+        }
+    }
+
+    @include responsive(phone) {
+        padding: 6px 9px;
+        right: 12px;
+        font-size: 14px;
+    }
+
+    &::hover {
+        background-color: lighten($primary-color, 10%);
+    }
+}
+
+.btnLink {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.getTouchedWrap {
+    .getTouched {
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .socialIcons {
+            i {
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                border-radius: 50%;
+                font-size: 14px;
+                line-height: 2.9;
+                // margin-right: 3px;
+                // margin-left: 3px;
+                text-align: center;
+                color: #fff;
+                border: 1px solid #fff;
+
+                &:hover {
+                    background: #fff;
+                    color: #fff;
+                    border: 1px solid #fff;
+                }
+            }
+            .fb {
+                i {
+                    background: #4267b2;
+                    border: 1px solid #4267b2;
+                    &:hover {
+                        background: lighten(#4267b2, 5%);
+                    }
+                }
+            }
+            .insta {
+                i {
+                    background: radial-gradient(
+                        circle at 30% 107%,
+                        #fdf497 0%,
+                        #fdf497 5%,
+                        #fd5949 45%,
+                        #d6249f 60%,
+                        #285aeb 90%
+                    );
+                    border: 1px solid #9c337c;
+                    &:hover {
+                        background: radial-gradient(
+                            circle at 30% 107%,
+                            #fff7a4 0%,
+                            #fbf39f 5%,
+                            #f96658 45%,
+                            #da34a7 60%,
+                            #3663e6 90%
+                        );
+                    }
+                }
+            }
+            .youTub {
+                i {
+                    background: #ff0000;
+                    border: 1px solid #f00;
+                    &:hover {
+                        background: lighten(#ff0000, 10%);
+                    }
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 1.3rem;
+
+            span {
+                text-transform: capitalize;
+
+                &::after {
+                    content: "";
+                    border-bottom: 0px solid $primary-color;
+                }
+            }
+        }
+    }
+}
