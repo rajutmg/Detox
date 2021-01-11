@@ -360,3 +360,204 @@ bottom: -5%;
 
 @import "common";
 @import "pages/home";
+
+
+// Pay Bill start
+
+#mainBanner.payBanner{
+    height: 350px;
+    @include responsive(phone){
+        height: 200px; 
+        position: relative;
+    }
+    @include responsive(tab-port-only){
+        position: relative;
+    }
+    .container .bannerContent {
+        justify-content: center;
+    }
+    .personImage {
+        position: absolute;
+        height: auto; 
+        bottom: auto;
+        left: 5%;
+        margin-top: 17px;
+        @include responsive(phone){
+            height: 175px;
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            left: -24%;
+    margin-top: 24px;
+}
+@include responsive(tab-port-only){
+    left: -18%;
+}
+    }
+    .bookImage {
+        position: absolute;
+        right: 8.5%;
+        height: 430px;
+        bottom: auto;
+        top: 0;
+        @include responsive(phone){
+            height: 195px;
+            bottom: -15px;
+            right: -55px;
+    top: auto;
+        }
+        @include responsive(tab-port-only){
+            right: -12.5%;
+            height: 380px;
+            top: 21px;
+        }
+    }
+    .bookPrice {
+        position: absolute;
+        right: 5%;
+        height: 90%;
+        top: 0;
+        height: 325px;
+        @include responsive(phone){
+            height: auto;
+        }
+        .priceHolder {
+            height: 45%;
+            position: relative;
+            @include responsive(phone){
+                top: -100px;
+            }
+        }
+    }
+}
+#billingPage{
+    .secTitle h1 {
+        color: #012f07;
+        text-align: left;
+    }
+    .billingForm{
+        h1{
+            text-transform: uppercase;
+            font-weight: 600;
+            @include responsive(phone){
+                font-size: 1.5em;
+            }
+        }
+    }
+    ul{
+        padding-left: 45px;
+        li{
+            list-style: none;
+            position: relative;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            &::after{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                height: 45px;
+                width: 45px;
+                background-image: url(../img/pay/check.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                top: -4px;
+                left: -48px;
+            }
+            span{
+                color: #fe5d13;
+                font-weight: 600;
+            }
+        }
+    }
+    .billingForm{
+        border: 1px solid #ddd;
+    padding: 35px;
+    @include responsive(phone){
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .form-control{
+        border-radius: 0;
+        margin-bottom: 15px;
+        font-size: 15px;
+        padding: 0.6rem .75rem;
+        @include responsive(phone){
+            font-size: 14px;
+            padding: 0.5rem .75rem;
+        }
+    }
+    .errorMessage{
+        p{
+            margin-top: -13px;
+            font-size: 13px;
+            color: red;
+        }
+    }
+    .basic{
+        margin-bottom: 30px;
+    }
+    .viewBtn{
+    color: #fff;
+    font-size: 2.5em;
+    font-family: "franklingothiclt";
+    text-transform: uppercase;
+    background-image: linear-gradient(#fb892f, #ff4000);
+    display: initial;
+    padding: 0px 30px;
+    border-radius: 0;
+    position: relative;
+    margin-top: 30px;
+    }
+    .centeredBox{
+        text-align: center;
+        .payCard{
+            height: 85px;
+            margin-top: 10px;
+            @include responsive(phone){
+                height: 70px;
+            }
+        }
+        .payBack{
+            height: 110px;
+            @include responsive(phone){
+                height: 85px;
+            }
+        }
+    }
+    }
+}
+.form-control:focus {
+    border-color: $primary-box-color;
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
+}
+#thankYou{
+    .secTitle h1 {
+        color: #012f07;
+    }
+    .thankYOu {
+        background: #f2f2f2;
+        padding: 50px;
+        @include responsive(phone){
+            padding: 20px;  
+        }
+        p{
+            line-height: 2;
+        }
+    }
+}
+#bottomLink{
+    text-align: center;
+    margin-top: 50px;
+    p{
+        font-size: 14px;
+        a{
+            margin: 0 5px;
+            &:hover{
+                color: #fe5d13; 
+            }
+        }
+    }
+}
+// Pay Bill end

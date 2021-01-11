@@ -1339,4 +1339,262 @@ h4 {
   bottom: 5px;
   font-weight: 600;
 }
+
+#mainBanner.payBanner {
+  height: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainBanner.payBanner {
+    height: 200px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #mainBanner.payBanner {
+    position: relative;
+  }
+}
+
+#mainBanner.payBanner .container .bannerContent {
+  justify-content: center;
+}
+
+#mainBanner.payBanner .personImage {
+  position: absolute;
+  height: auto;
+  bottom: auto;
+  left: 5%;
+  margin-top: 17px;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainBanner.payBanner .personImage {
+    height: 175px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    left: -24%;
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #mainBanner.payBanner .personImage {
+    left: -18%;
+  }
+}
+
+#mainBanner.payBanner .bookImage {
+  position: absolute;
+  right: 8.5%;
+  height: 430px;
+  bottom: auto;
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainBanner.payBanner .bookImage {
+    height: 195px;
+    bottom: -15px;
+    right: -55px;
+    top: auto;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #mainBanner.payBanner .bookImage {
+    right: -12.5%;
+    height: 380px;
+    top: 21px;
+  }
+}
+
+#mainBanner.payBanner .bookPrice {
+  position: absolute;
+  right: 5%;
+  height: 90%;
+  top: 0;
+  height: 325px;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainBanner.payBanner .bookPrice {
+    height: auto;
+  }
+}
+
+#mainBanner.payBanner .bookPrice .priceHolder {
+  height: 45%;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainBanner.payBanner .bookPrice .priceHolder {
+    top: -100px;
+  }
+}
+
+#billingPage .secTitle h1 {
+  color: #012f07;
+  text-align: left;
+}
+
+#billingPage .billingForm h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  #billingPage .billingForm h1 {
+    font-size: 1.5em;
+  }
+}
+
+#billingPage ul {
+  padding-left: 45px;
+}
+
+#billingPage ul li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+#billingPage ul li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-image: url(../img/pay/check.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -4px;
+  left: -48px;
+}
+
+#billingPage ul li span {
+  color: #fe5d13;
+  font-weight: 600;
+}
+
+#billingPage .billingForm {
+  border: 1px solid #ddd;
+  padding: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  #billingPage .billingForm {
+    margin-top: 30px;
+    padding: 20px;
+  }
+}
+
+#billingPage .billingForm .form-control {
+  border-radius: 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding: 0.6rem .75rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #billingPage .billingForm .form-control {
+    font-size: 14px;
+    padding: 0.5rem .75rem;
+  }
+}
+
+#billingPage .billingForm .errorMessage p {
+  margin-top: -13px;
+  font-size: 13px;
+  color: red;
+}
+
+#billingPage .billingForm .basic {
+  margin-bottom: 30px;
+}
+
+#billingPage .billingForm .viewBtn {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: "franklingothiclt";
+  text-transform: uppercase;
+  background-image: linear-gradient(#fb892f, #ff4000);
+  display: initial;
+  padding: 0px 30px;
+  border-radius: 0;
+  position: relative;
+  margin-top: 30px;
+}
+
+#billingPage .billingForm .centeredBox {
+  text-align: center;
+}
+
+#billingPage .billingForm .centeredBox .payCard {
+  height: 85px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #billingPage .billingForm .centeredBox .payCard {
+    height: 70px;
+  }
+}
+
+#billingPage .billingForm .centeredBox .payBack {
+  height: 110px;
+}
+
+@media only screen and (max-width: 600px) {
+  #billingPage .billingForm .centeredBox .payBack {
+    height: 85px;
+  }
+}
+
+.form-control:focus {
+  border-color: #42711f;
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+
+#thankYou .secTitle h1 {
+  color: #012f07;
+}
+
+#thankYou .thankYOu {
+  background: #f2f2f2;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  #thankYou .thankYOu {
+    padding: 20px;
+  }
+}
+
+#thankYou .thankYOu p {
+  line-height: 2;
+}
+
+#bottomLink {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#bottomLink p {
+  font-size: 14px;
+}
+
+#bottomLink p a {
+  margin: 0 5px;
+}
+
+#bottomLink p a:hover {
+  color: #fe5d13;
+}
 /*# sourceMappingURL=main.css.map */
